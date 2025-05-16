@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('fonts/Karla-VariableFont_wght.ttf');
+}
+
+html,body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'myfont';
+    background: rgba(28, 28, 28, 1);
+    height: 100%;
+}
+
+#container {
+    margin: auto;
+    background: rgba(31, 41, 55, 1);
+    max-width: 90%;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 4vw;
+    margin: 0;
+}
+
+h2 {
+    color: rgba(213, 212, 216, 1);
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+#random-password {
+    color: rgba(74, 223, 134, 1);
+}
+
+#generate-password {
+    background: rgba(16, 185, 129, 1);
+    color: white;
+    box-shadow: 0px 4px 4px 0px #000000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2vw;
+    font-family: 'myfont';
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#generate-password:hover {
+    transform: scale(1.03);
+}
+
+hr {
+    border: 1.5px solid rgba(47, 62, 83, 1);
+    padding: 0;
+    margin-top: 25px;
+}
+
+#password-placements {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#passwordPlacement1,#passwordPlacement2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(39, 53, 73, 1);
+    border: none;
+    border-radius: 5px;
+    margin-top: 12.5px;
+    color: rgba(74, 223, 134, 1);
+    width: 400px;
+    height: auto;
+    text-align: center;
+    font-size: 2vw;
+}
+
+#passwordPlacement1 p,#passwordPlacement2 p {
+    padding: 10px 25px;
+    margin: 0;
+}
+
+/* Extra Small Devices (phones, 600px and down)*/
+@media (max-width: 600px) {
+    #container {
+        max-width: 80%;
+        min-height: 30%;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 8vw;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #generate-password {
+        display: block;
+        margin: auto;
+        font-size: 4vw;
+    }
+
+    #passwordPlacement1,#passwordPlacement2 {
+        font-size: 4vw;
+    }
+}
+
+/* Small Devices (Tablets & Large Phones, 600px and up)*/
+@media (min-width: 600px) {
+    #container {
+        overflow: hidden;
+        min-height: 47%;
+    }
+
+    h1 {
+        font-size: 8vw;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #generate-password {
+        display: block;
+        margin: auto;
+        font-size: 4vw;
+    }
+
+    #passwordPlacement1,#passwordPlacement2 {
+        font-size: 4vw;
+    }
+}
+
+/* Medium Devices (Landscape Tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #container {
+        overflow: hidden;
+        max-width: 80%;
+        min-height: 30%;
+    }
+
+    h1 {
+        font-size: 7vw;
+        text-align: left;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #generate-password {
+        display: block;
+        margin: 0;
+        font-size: 3vw;
+    }
+
+    #passwordPlacement1,#passwordPlacement2 {
+        font-size: 3vw;
+    }
+
+    #password-placements {
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Large Devices (laptops/desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #container {
+        overflow: hidden;
+        max-width: 80%;
+        min-height: 30%;
+    }
+
+    h1 {
+        font-size: 7vw;
+        text-align: left;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #generate-password {
+        display: block;
+        margin: 0;
+        font-size: 3vw;
+    }
+
+    #passwordPlacement1,#passwordPlacement2 {
+        font-size: 3vw;
+    }
+
+    #password-placements {
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Extra Large Devices (large laptops/desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #container {
+        margin: auto;
+        overflow: hidden;
+        max-width: 90%;
+        min-height: 39%;
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 3.3vw;
+        text-align: left;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.8vw;
+        text-align: left;
+    }
+
+    #generate-password {
+        display: block;
+        margin: 0;
+        font-size: 1.5vw;
+    }
+
+    #passwordPlacement1,#passwordPlacement2 {
+        font-size: 1.5vw;
+    }
+
+    #password-placements {
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+}
