@@ -10,3 +10,4 @@ The Random Password Generator is a simple, secure, and user-friendly tool design
     • Frontend: HTML, CSS, JavaScript
     • UI Style: Dark mode with accent colors for readability
     • Responsive Design: Works well across devices and screen sizes
+<img width="1710" alt="Screenshot 2025-05-16 at 14 20 15" src="https://github.com/user-attachments/assets/8968f8bd-f1b6-4874-bac5-e5c358faa683" />
